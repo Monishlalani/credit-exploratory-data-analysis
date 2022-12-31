@@ -6,52 +6,36 @@ Applying EDA to understand  risk analytics in banking and financial services and
 
 [![MATPLOTLIB](https://img.shields.io/badge/-MATPLOTLIB-007aa6?style=for-the-badge)](https://img.shields.io/badge/-MATPLOTLIB-007aa6?style=for-the-badge) [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) [![Jupyter](https://img.shields.io/badge/-Jupyter-f5841f?style=for-the-badge)](https://img.shields.io/badge/-Jupyter-f5841f?style=for-the-badge) [![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white) [![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white) 
 
-## Architecture
+## Visualization
 
-Fololowing is the architecture of the application.
+### Clients income amount vs education.
 [![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)
+- Based on there avgerage income of different occupation we can provide loan to the new clients as per as there income and occupation.
 
 
+
+### Clients income amount vs income type based on family status 
 [![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)
+- Business man and commercial associate are likely to apply more for loan and are Non-defaulters
+- Married Business man have more income compared to others and are non defaulters.
+- While pensioner, student and unemployed have high risk of defaulters due to low income.
 
-- A topic with 10 partitions is created by the `kafka-admin.service.ts` file.
-- The `producer.service.ts` has the logic to push messages as per their priority in their respective partitions.
-- The `app.service.ts` produces messages with the correct key when `localhost:3000` is queried.
-- The `test.consumer.ts` file creates 10 consumers.
-- The `consumer.service.ts` file maps the consumers to the respective partitions.
 
-## Environment setup
+## Final conclusion
+- Person with Higher education , Academic degree should be preferred.
+- Applicant with income type of Business and commercial associate are likely to be non default.
+- Person with House as an asset can be preferred as a asset collateral and can we given loan.
+- Based on there avgerage income of different occupation we can provide loan to the new clients as per as there income and occupation.
+- Applicants who are employed and are married have lesser chance to be defaulter.
+- Male clients with Incomplete Education having very low salaries have a high risk of default.
+- 30% of people of loan purpose Refusal to name the goal were defaulters.
+- Hobby,Money for a third person,Payments on other loans,Gasification / water supply ,Car repairs may have high chance to be defaulters
+- 9.57% people with income type Unemployed have high chance to be defaulters.
 
-- Install JDK8
-- Install and run the following
-  - zookeeper - It keeps a track of kafka clusters and brokers within it.
-  - kakfa - The message streaming service from apache.
-- How to install kafka: https://kafka.apache.org/quickstart
-
-## Environment variables
-
-- Copy the contents of .env.example file in .env file
-
-## Installation
-
-Nestjs-kafkajs-integration requires [Node.js](https://nodejs.org/) v16+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd nestjs-kafkajs-integration
-npm i
-npm run start:dev
-```
 
 ## Author
 
-Faizal Vasaya
+Monish Lalani
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/faizalvasaya/) [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/FaizalVasaya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/monish-lalani) 
 
-## License
-
-MIT
-
-**Free Software, Hell Yeah!**
