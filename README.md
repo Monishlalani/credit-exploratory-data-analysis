@@ -8,13 +8,13 @@ Applying EDA to understand  risk analytics in banking and financial services and
 
 ## Visualization
 
-### Clients income amount vs education.
+### Clients income amount vs education (Target 0 are non defaulter & Target 1 are defaulter).
 [![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)
 - Based on there avgerage income of different occupation we can provide loan to the new clients as per as there income and occupation.
 
 
 
-### Clients income amount vs income type based on family status 
+### Clients income amount vs income type based on family status (Target 0 are non defaulter & Target 1 are defaulter).
 [![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)
 - Business man and commercial associate are likely to apply more for loan and are Non-defaulters
 - Married Business man have more income compared to others and are non defaulters.
