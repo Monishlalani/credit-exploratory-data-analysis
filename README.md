@@ -9,7 +9,10 @@ Applying EDA to understand  risk analytics in banking and financial services and
 ## Architecture
 
 Fololowing is the architecture of the application.
-[![Architecure Diagram](https://raw.githubusercontent.com/faizvasaya/nestjs-kafkajs-integration/main/KafkaPriorityQueue.jpg)](https://raw.githubusercontent.com/faizvasaya/nestjs-kafkajs-integration/main/KafkaPriorityQueue.jpg)
+[![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182550.png?raw=true)
+
+
+[![Architecure Diagram](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)](https://github.com/Monishlalani/credit-exploratory-data-analysis/blob/main/Screenshot_20221231_182720.png?raw=true)
 
 - A topic with 10 partitions is created by the `kafka-admin.service.ts` file.
 - The `producer.service.ts` has the logic to push messages as per their priority in their respective partitions.
