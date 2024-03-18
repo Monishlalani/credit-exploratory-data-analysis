@@ -40,3 +40,50 @@ Monish Lalani
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monish-lalani/) 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:monishlalani12@gmail.com)  
 
+
+
+
+
+
+
+
+import numpy as np
+import tensorflow as tf
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+# Assuming you have already loaded and preprocessed your data
+
+# Splitting data into features and target variable
+X = ...  # Features
+y = ...  # Target variable (TV ownership)
+
+# Splitting data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Standardizing features
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Building the ANN model
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Dense(128, activation='relu', input_shape=(X_train.shape[1],)),
+    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(1)  # Output layer
+])
+
+# Compiling the model
+model.compile(optimizer='adam', loss='mean_squared_error')
+
+# Training the model
+model.fit(X_train_scaled, y_train, epochs=100, batch_size=32, verbose=1)
+
+# Evaluating the model
+mse = model.evaluate(X_test_scaled, y_test, verbose=0)
+print("Mean Squared Error on Test Set:", mse)
+
+# Making predictions
+predictions = model.predict(X_test_scaled)
+
+# You can use these predictions for further analysis or visualization
