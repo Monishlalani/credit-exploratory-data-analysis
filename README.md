@@ -98,23 +98,3 @@ mse = mean_squared_error(y_test, predictions)
 print("Mean Squared Error on Test Set:", mse)
 
 # You can use these predictions for further analysis or visualization
-
-
-
-
-
-
-
-
-
-
-
-Built and implemented best practices for data cleaning and anomaly detection, ensuring high data quality.
-
--Utilized advanced statistical techniques and ML algorithms to enhance data analysis processes and improve model performances.
-
--Developed an efficient pipeline that reduced analysis time by 2 days per query, enhancing overall workflow efficiency by 25%.
-
--Documented methodologies and created visualizations to facilitate understanding and support strategic decision-making.
-
--Validated data before deploying new projects, performing regular analysis on ad-hoc queries that ensured 100% accuracy and reliability of reports
