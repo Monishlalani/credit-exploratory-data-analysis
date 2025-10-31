@@ -98,3 +98,16 @@ mse = mean_squared_error(y_test, predictions)
 print("Mean Squared Error on Test Set:", mse)
 
 # You can use these predictions for further analysis or visualization
+
+
+
+
+
+
+
+Meeting link
+meet.google.com/vez-qoub-tvw
+Join by phone
+(US) +1 575-395-6445
+PIN: 847408600
+
